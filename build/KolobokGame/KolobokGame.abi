@@ -1,0 +1,179 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Tue Feb 26 18:45:01 2019",
+    "version": "eosio::abi/1.1",
+    "structs": [
+        {
+            "name": "baby",
+            "base": "",
+            "fields": [
+                {
+                    "name": "parent1",
+                    "type": "uint64"
+                },
+                {
+                    "name": "parent2",
+                    "type": "uint64"
+                },
+                {
+                    "name": "coldown",
+                    "type": "uint64"
+                },
+                {
+                    "name": "bname",
+                    "type": "string"
+                },
+                {
+                    "name": "owner",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "borna",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "breed",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "parent1",
+                    "type": "uint64"
+                },
+                {
+                    "name": "parent2",
+                    "type": "uint64"
+                },
+                {
+                    "name": "name",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "genesis",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "name",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "global",
+            "base": "",
+            "fields": [
+                {
+                    "name": "tickertime",
+                    "type": "uint64"
+                },
+                {
+                    "name": "lastticker",
+                    "type": "uint64"
+                },
+                {
+                    "name": "spare1",
+                    "type": "uint64"
+                },
+                {
+                    "name": "spare2",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "sasset",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "author",
+                    "type": "name"
+                },
+                {
+                    "name": "category",
+                    "type": "name"
+                },
+                {
+                    "name": "idata",
+                    "type": "string"
+                },
+                {
+                    "name": "mdata",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "ticker",
+            "base": "",
+            "fields": []
+        }
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "borna",
+            "type": "borna",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "breed",
+            "type": "breed",
+            "ricardian_contract": "Breed new Kolobok"
+        },
+        {
+            "name": "genesis",
+            "type": "genesis",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "ticker",
+            "type": "ticker",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "babys",
+            "type": "baby",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "global",
+            "type": "global",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "sassets",
+            "type": "sasset",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": [],
+    "abi_extensions": []
+}
