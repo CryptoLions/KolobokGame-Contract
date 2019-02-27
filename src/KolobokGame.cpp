@@ -266,7 +266,7 @@ uint32_t KolobokGame::born(){
 
 				uint64_t cdap1 = cdap_default + agep1 * mAge1 - (uint64_t)p1_mdata["kids"] * 60 * 1;
 				uint64_t cdap2 = cdap_default + agep2 * mAge2 - (uint64_t)p2_mdata["kids"] * 60 * 1;
-				uint64_t cdab = cdab_default + generation * 60*60*1; //1h for each generation
+				uint64_t cdab = now() + cdab_default + generation * 60*60*1; //1h for each generation
 
 				p1_mdata["kids"] = (int)p1_mdata["kids"] + 1;
 				p1_mdata["cd"] = now() + cdap1;
